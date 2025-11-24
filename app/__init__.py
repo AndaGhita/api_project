@@ -1,5 +1,6 @@
 from flask import Flask, jsonify, request
 
+# instance of flask application
 app = Flask(__name__)
 
 #Import routers
