@@ -1,2 +1,9 @@
 from flask import Flask, jsonify, request
-from flask.ext.jsonpify import jsonify
+
+app = Flask(__name__)
+
+#Import routers
+from .routers import bp
+app.register_blueprint(bp)
+
+return app
