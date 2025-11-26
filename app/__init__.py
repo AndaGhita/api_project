@@ -8,3 +8,7 @@ from .routers import bp
 app.register_blueprint(bp)
 
 return app
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
